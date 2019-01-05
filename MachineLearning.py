@@ -24,18 +24,6 @@ for line in file_obj:
     strings.append(line.strip().lower())
 
 
-# In[4]:
-
-
-len(strings)
-
-
-# In[5]:
-
-
-print strings[0]
-
-
 # In[6]:
 
 
@@ -45,12 +33,6 @@ for i in range(len(strings)):
     temp = strings[i].split("\t")
     text_list.append(temp[2])
     type_list.append(temp[0])
-
-
-# In[7]:
-
-
-print text_list[0]
 
 
 # In[8]:
@@ -109,12 +91,6 @@ for i in words:
     c += 1
 
 
-# In[12]:
-
-
-print type_dict
-
-
 # In[13]:
 
 
@@ -126,19 +102,12 @@ for i in words:
                 sum = sum + c
             words_dict[j] = np.true_divide(words_dict[j], sum)
 
-print words_dict[u"когда"]
-sum = 0
-for i in words_dict[u"когда"]:
-    sum = sum + i
-print sum
-
 
 # In[14]:
 
 
 count = 0
 c = 0
-#while(score>=0.5):
 for i in words:
     temp = np.zeros(10)
     for j in i:
